@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Concept 1: Shattered Hexagon - Represents distributed key shards -->
+  <!-- Three separate pieces that together form a complete shape -->
+  
+  <!-- Outer frame -->
+  <rect x="40" y="40" width="120" height="120" stroke="#000" stroke-width="2" fill="none"/>
+  
+  <!-- Top shard -->
+  <path d="M100 55 L130 75 L130 100 L100 100 L70 100 L70 75 Z" fill="#000"/>
+  
+  <!-- Bottom-left shard with gap -->
+  <path d="M68 102 L68 130 L95 145 L95 102 Z" fill="#000"/>
+  
+  <!-- Bottom-right shard with gap -->
+  <path d="M105 102 L105 145 L132 130 L132 102 Z" fill="#000"/>
+  
+  <!-- Small dot in center showing "key never exists" -->
+  <circle cx="100" cy="100" r="3" fill="#fff"/>
+  
+  <!-- Corner accents -->
+  <rect x="40" y="40" width="12" height="2" fill="#000"/>
+  <rect x="40" y="40" width="2" height="12" fill="#000"/>
+  <rect x="148" y="40" width="12" height="2" fill="#000"/>
+  <rect x="158" y="40" width="2" height="12" fill="#000"/>
+  <rect x="40" y="158" width="12" height="2" fill="#000"/>
+  <rect x="40" y="148" width="2" height="12" fill="#000"/>
+  <rect x="148" y="158" width="12" height="2" fill="#000"/>
+  <rect x="158" y="148" width="2" height="12" fill="#000"/>
+</svg>
+

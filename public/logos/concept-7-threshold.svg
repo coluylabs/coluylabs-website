@@ -1,0 +1,42 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Concept 7: Threshold Lock - 2-of-2 visual representation -->
+  <!-- Abstract lock that requires two pieces to complete -->
+  
+  <!-- Lock body - split in half -->
+  <rect x="55" y="90" width="40" height="55" fill="#000"/>
+  <rect x="105" y="90" width="40" height="55" fill="#000"/>
+  
+  <!-- Gap in middle (represents the distributed nature) -->
+  <rect x="95" y="90" width="10" height="55" fill="none"/>
+  
+  <!-- Lock shackle left half -->
+  <path d="M70 90 L70 60 Q70 45 85 45 L95 45" 
+        stroke="#000" stroke-width="8" fill="none" stroke-linecap="square"/>
+  
+  <!-- Lock shackle right half -->
+  <path d="M130 90 L130 60 Q130 45 115 45 L105 45" 
+        stroke="#000" stroke-width="8" fill="none" stroke-linecap="square"/>
+  
+  <!-- Gap in shackle top (never connected) -->
+  <line x1="95" y1="45" x2="105" y2="45" stroke="#fff" stroke-width="10"/>
+  
+  <!-- Keyhole left side -->
+  <circle cx="80" cy="115" r="6" fill="#fff"/>
+  <rect x="77" y="115" width="6" height="15" fill="#fff"/>
+  
+  <!-- Keyhole right side (mirror) -->
+  <circle cx="120" cy="115" r="6" fill="#fff"/>
+  <rect x="117" y="115" width="6" height="15" fill="#fff"/>
+  
+  <!-- Connection indicators (the protocol) -->
+  <line x1="95" y1="110" x2="105" y2="110" stroke="#000" stroke-width="2" stroke-dasharray="2 2"/>
+  <line x1="95" y1="120" x2="105" y2="120" stroke="#000" stroke-width="2" stroke-dasharray="2 2"/>
+  <line x1="95" y1="130" x2="105" y2="130" stroke="#000" stroke-width="2" stroke-dasharray="2 2"/>
+  
+  <!-- Frame -->
+  <rect x="35" y="35" width="130" height="130" stroke="#000" stroke-width="1.5" fill="none"/>
+  
+  <!-- 2/2 label -->
+  <text x="100" y="175" font-family="monospace" font-size="12" font-weight="bold" text-anchor="middle" fill="#000">2 / 2</text>
+</svg>
+

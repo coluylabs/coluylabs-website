@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coluy Labs - Logo Concepts</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    body {
+      font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+      background: #0a0a0a;
+      color: #fff;
+      min-height: 100vh;
+      padding: 60px 40px;
+    }
+    
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+    }
+    
+    .subtitle {
+      color: #666;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-bottom: 60px;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    
+    .concept {
+      background: #111;
+      border: 1px solid #222;
+      padding: 30px;
+      transition: all 0.3s ease;
+    }
+    
+    .concept:hover {
+      border-color: #444;
+      transform: translateY(-4px);
+    }
+    
+    .concept-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+    
+    .concept-number {
+      font-size: 0.75rem;
+      color: #555;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+    
+    .concept-name {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+    }
+    
+    .logo-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      background: #fff;
+      margin-bottom: 24px;
+    }
+    
+    .logo-container.dark {
+      background: #000;
+    }
+    
+    .logo-container img {
+      width: 120px;
+      height: 120px;
+    }
+    
+    .description {
+      font-size: 0.8rem;
+      color: #888;
+      line-height: 1.6;
+    }
+    
+    .toggle-row {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 16px;
+    }
+    
+    .toggle-btn {
+      padding: 6px 12px;
+      font-size: 0.7rem;
+      font-family: inherit;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      background: transparent;
+      border: 1px solid #333;
+      color: #666;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    
+    .toggle-btn:hover, .toggle-btn.active {
+      border-color: #fff;
+      color: #fff;
+    }
+    
+    .with-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+    
+    .brand-text {
+      text-align: center;
+    }
+    
+    .brand-name {
+      font-size: 1.1rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+    }
+    
+    .brand-tagline {
+      font-size: 0.6rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      opacity: 0.5;
+      margin-top: 4px;
+    }
+    
+    footer {
+      text-align: center;
+      margin-top: 80px;
+      padding-top: 40px;
+      border-top: 1px solid #222;
+      color: #444;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+    }
+  </style>
+</head>
+<body>
+  <h1>Coluy Labs</h1>
+  <p class="subtitle">Logo Concept Exploration</p>
+  
+  <div class="grid">
+    <!-- Concept 1 -->
+    <div class="concept">
+      <div class="concept-header">
+        <span class="concept-number">Concept 01</span>
+      </div>
+      <div class="concept-name">Shattered Hexagon</div>
+      <div class="toggle-row">
+        <button class="toggle-btn active" onclick="toggleBg(this, 'light')">Light</button>
+        <button class="toggle-btn" onclick="toggleBg(this, 'dark')">Dark</button>
+      </div>
+      <div class="logo-container">
+        <img src="concept-1-shards.svg" alt="Shattered Hexagon Logo">
+      </div>
+      <p class="description">Three separate shards that together form a complete shape. The center void represents "the key that never exists." Geometric, technical, and represents distributed key generation.</p>
+    </div>
+    
+    <!-- Concept 2 -->
+    <div class="concept">
+      <div class="concept-header">
+        <span class="concept-number">Concept 02</span>
+      </div>
+      <div class="concept-name">Connected Nodes</div>
+      <div class="toggle-row">
+        <button class="toggle-btn active" onclick="toggleBg(this, 'light')">Light</button>
+        <button class="toggle-btn" onclick="toggleBg(this, 'dark')">Dark</button>
+      </div>
+      <div class="logo-container">
+        <img src="concept-2-nodes.svg" alt="Connected Nodes Logo">
+      </div>
+      <p class="description">Two nodes connected through secure channels. Directly represents the 2-of-2 MPC architecture. Technical and network-inspired.</p>
+    </div>
+    
+    <!-- Concept 3 -->
+    <div class="concept">
+      <div class="concept-header">
+        <span class="concept-number">Concept 03</span>
+      </div>
+      <div class="concept-name">Divided Shield</div>
+      <div class="toggle-row">
+        <button class="toggle-btn active" onclick="toggleBg(this, 'light')">Light</button>
+        <button class="toggle-btn" onclick="toggleBg(this, 'dark')">Dark</button>
+      </div>
+      <div class="logo-container">
+        <img src="concept-3-shield.svg" alt="Divided Shield Logo">
+      </div>
+      <p class="description">Classic security symbol divided into quadrants. Represents protection through distribution. Lab flask accent at bottom nods to research identity.</p>
+    </div>
+    
+    <!-- Concept 4 -->
+    <div class="concept">
+      <div class="concept-header">
+        <span class="concept-number">Concept 04</span>
+      </div>
+      <div class="concept-name">Crypto Crystal</div>
+      <div class="toggle-row">
+        <button class="toggle-btn active" onclick="toggleBg(this, 'light')">Light</button>
+        <button class="toggle-btn" onclick="toggleBg(this, 'dark')">Dark</button>
+      </div>
+      <div class="logo-container">
+        <img src="concept-4-crystal.svg" alt="Crypto Crystal Logo">
+      </div>
+      <p class="description">A prism that splits light into parts—like splitting a key into shards. Faceted, dimensional, sophisticated. Hollow center for the absent key.</p>
+    </div>
+    
+    <!-- Concept 5 -->
+    <div class="concept">
+      <div class="concept-header">
+        <span class="concept-number">Concept 05</span>
+      </div>
+      <div class="concept-name">Lab Flask</div>
+      <div class="toggle-row">
+        <button class="toggle-btn active" onclick="toggleBg(this, 'light')">Light</button>
+        <button class="toggle-btn" onclick="toggleBg(this, 'dark')">Dark</button>
+      </div>
+      <div class="logo-container">
+        <img src="concept-5-lab-flask.svg" alt="Lab Flask Logo">
+      </div>
+      <p class="description">Classic laboratory flask containing digital shards. Blends science and crypto aesthetics. Strong "Labs" identity with technical undertones.</p>
+    </div>
+    
+    <!-- Concept 6 -->
+    <div class="concept">
+      <div class="concept-header">
+        <span class="concept-number">Concept 06</span>
+      </div>
+      <div class="concept-name">CL Monogram</div>
+      <div class="toggle-row">
+        <button class="toggle-btn active" onclick="toggleBg(this, 'light')">Light</button>
+        <button class="toggle-btn" onclick="toggleBg(this, 'dark')">Dark</button>
+      </div>
+      <div class="logo-container">
+        <img src="concept-6-monogram.svg" alt="CL Monogram Logo">
+      </div>
+      <p class="description">Stylized "CL" lettermark with a break in the C representing the shard concept. Clean, versatile, and immediately recognizable as a brand mark.</p>
+    </div>
+    
+    <!-- Concept 7 -->
+    <div class="concept">
+      <div class="concept-header">
+        <span class="concept-number">Concept 07</span>
+      </div>
+      <div class="concept-name">Threshold Lock</div>
+      <div class="toggle-row">
+        <button class="toggle-btn active" onclick="toggleBg(this, 'light')">Light</button>
+        <button class="toggle-btn" onclick="toggleBg(this, 'dark')">Dark</button>
+      </div>
+      <div class="logo-container">
+        <img src="concept-7-threshold.svg" alt="Threshold Lock Logo">
+      </div>
+      <p class="description">A lock split in two, requiring both halves. Directly communicates 2-of-2 threshold security. Dashed lines show the cryptographic protocol connecting parts.</p>
+    </div>
+    
+    <!-- Concept 8 -->
+    <div class="concept">
+      <div class="concept-header">
+        <span class="concept-number">Concept 08</span>
+      </div>
+      <div class="concept-name">Abstract C</div>
+      <div class="toggle-row">
+        <button class="toggle-btn active" onclick="toggleBg(this, 'light')">Light</button>
+        <button class="toggle-btn" onclick="toggleBg(this, 'dark')">Dark</button>
+      </div>
+      <div class="logo-container">
+        <img src="concept-8-abstract-c.svg" alt="Abstract C Logo">
+      </div>
+      <p class="description">Layered C letterform with a strategic break. Modern, dynamic, premium feel. Works at any size. Technical accent lines add crypto edge.</p>
+    </div>
+  </div>
+  
+  <footer>
+    &copy; 2026 Coluy Labs · Logo Concepts for Internal Review
+  </footer>
+  
+  <script>
+    function toggleBg(btn, mode) {
+      const concept = btn.closest('.concept');
+      const container = concept.querySelector('.logo-container');
+      const buttons = concept.querySelectorAll('.toggle-btn');
+      
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      
+      if (mode === 'dark') {
+        container.classList.add('dark');
+      } else {
+        container.classList.remove('dark');
+      }
+    }
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,36 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Concept 5: Lab Flask with Digital Pattern - Science meets Crypto -->
+  <!-- Classic lab iconography with digital/crypto aesthetics -->
+  
+  <!-- Flask neck -->
+  <rect x="85" y="35" width="30" height="40" stroke="#000" stroke-width="2.5" fill="none"/>
+  
+  <!-- Flask top rim -->
+  <line x1="80" y1="35" x2="120" y2="35" stroke="#000" stroke-width="2.5"/>
+  
+  <!-- Flask body (triangular) -->
+  <path d="M85 75 L45 155 Q40 165 50 165 L150 165 Q160 165 155 155 L115 75" 
+        stroke="#000" stroke-width="2.5" fill="none"/>
+  
+  <!-- Liquid level with shards inside -->
+  <path d="M55 145 L145 145 L150 155 Q155 160 148 160 L52 160 Q45 160 50 155 Z" fill="#000"/>
+  
+  <!-- Digital shard pattern in liquid (white cutouts) -->
+  <rect x="70" y="148" width="15" height="8" fill="#fff"/>
+  <rect x="92" y="150" width="12" height="6" fill="#fff"/>
+  <rect x="115" y="148" width="18" height="8" fill="#fff"/>
+  
+  <!-- Bubbles/particles -->
+  <circle cx="80" cy="125" r="3" stroke="#000" stroke-width="1.5" fill="none"/>
+  <circle cx="105" cy="115" r="4" stroke="#000" stroke-width="1.5" fill="none"/>
+  <circle cx="120" cy="130" r="2.5" stroke="#000" stroke-width="1.5" fill="none"/>
+  
+  <!-- Key shard symbol floating in flask -->
+  <polygon points="100,90 108,98 100,130 92,98" stroke="#000" stroke-width="1.5" fill="none"/>
+  
+  <!-- Measurement marks on flask -->
+  <line x1="140" y1="100" x2="132" y2="100" stroke="#000" stroke-width="1.5"/>
+  <line x1="148" y1="120" x2="136" y2="120" stroke="#000" stroke-width="1.5"/>
+  <line x1="152" y1="140" x2="140" y2="140" stroke="#000" stroke-width="1.5"/>
+</svg>
+

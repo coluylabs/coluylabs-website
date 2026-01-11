@@ -1,0 +1,31 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Concept 8: Abstract C - Minimalist single letter with layered depth -->
+  <!-- The C is split/fragmented representing the sharding concept -->
+  
+  <!-- Outer C layer (background) -->
+  <path d="M140 55 Q90 35 55 70 Q25 110 55 150 Q90 185 140 165" 
+        stroke="#000" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Middle C layer -->
+  <path d="M130 65 Q90 50 60 80 Q40 110 60 140 Q90 170 130 155" 
+        stroke="#000" stroke-width="6" fill="none" stroke-linecap="round"/>
+  
+  <!-- Inner C layer (bold) -->
+  <path d="M120 75 Q90 65 70 90 Q55 110 70 130 Q90 155 120 145" 
+        stroke="#000" stroke-width="12" fill="none" stroke-linecap="round"/>
+  
+  <!-- Break in the inner C (the shard/gap) -->
+  <line x1="62" y1="105" x2="62" y2="115" stroke="#fff" stroke-width="16"/>
+  
+  <!-- Central dot (focal point) -->
+  <circle cx="90" cy="110" r="5" fill="#000"/>
+  
+  <!-- Technical accent lines -->
+  <line x1="150" y1="100" x2="175" y2="100" stroke="#000" stroke-width="1.5"/>
+  <line x1="150" y1="110" x2="165" y2="110" stroke="#000" stroke-width="1.5"/>
+  <line x1="150" y1="120" x2="170" y2="120" stroke="#000" stroke-width="1.5"/>
+  
+  <!-- Corner mark -->
+  <path d="M15 35 L35 35 L35 15" stroke="#000" stroke-width="2" fill="none"/>
+</svg>
+

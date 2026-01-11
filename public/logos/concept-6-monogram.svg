@@ -1,0 +1,33 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Concept 6: CL Monogram - Clean lettermark with crypto twist -->
+  <!-- Stylized "CL" for Coluy Labs with fragmented/sharded effect -->
+  
+  <!-- Background square -->
+  <rect x="35" y="35" width="130" height="130" stroke="#000" stroke-width="2" fill="none"/>
+  
+  <!-- Letter C (fragmented) -->
+  <path d="M75 70 L60 70 Q50 70 50 80 L50 120 Q50 130 60 130 L75 130" 
+        stroke="#000" stroke-width="8" fill="none" stroke-linecap="square"/>
+  
+  <!-- Gap/break in C (representing the shard) -->
+  <line x1="50" y1="95" x2="50" y2="105" stroke="#fff" stroke-width="12"/>
+  
+  <!-- Letter L (angular/technical) -->
+  <path d="M95 65 L95 130 L135 130" 
+        stroke="#000" stroke-width="8" fill="none" stroke-linecap="square"/>
+  
+  <!-- Digital accent - horizontal lines through -->
+  <line x1="35" y1="100" x2="45" y2="100" stroke="#000" stroke-width="1.5"/>
+  <line x1="155" y1="100" x2="165" y2="100" stroke="#000" stroke-width="1.5"/>
+  
+  <!-- Corner brackets (technical frame) -->
+  <path d="M30 55 L30 30 L55 30" stroke="#000" stroke-width="2" fill="none"/>
+  <path d="M170 55 L170 30 L145 30" stroke="#000" stroke-width="2" fill="none"/>
+  <path d="M30 145 L30 170 L55 170" stroke="#000" stroke-width="2" fill="none"/>
+  <path d="M170 145 L170 170 L145 170" stroke="#000" stroke-width="2" fill="none"/>
+  
+  <!-- Small key dots -->
+  <circle cx="100" cy="100" r="3" fill="#000"/>
+  <circle cx="50" cy="100" r="2" fill="#000"/>
+</svg>
+
