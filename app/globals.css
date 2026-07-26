@@ -4,7 +4,7 @@
   --paper-3: #edeae3;
   --ink: #16171b;
   --ink-2: #42444c;
-  --muted: #6b6d76;
+  --muted: #5c5e66;
   --rule: #e2e0da;
   --rule-2: #c9c6be;
   --accent: #2b4a9b;
@@ -24,6 +24,25 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    transition-duration: 0.001ms !important;
+  }
 }
 
 body {

@@ -36,10 +36,18 @@ export const metadata: Metadata = {
     url: "https://coluylabs.org/",
     title: "Coluy Labs — Applied cryptography",
     description: "Notes and code from building MPC systems.",
-    images: [{ url: "/og.png" }],
+    images: [
+      {
+        url: "/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Coluy Labs — Applied cryptography",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
+    images: ["/og.png"],
   },
   icons: {
     icon: [{ url: "/favicon.svg", type: "image/svg+xml" }],
