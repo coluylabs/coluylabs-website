@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# coluylabs.org
 
-## Getting Started
+Personal site for Coluy Labs — applied cryptography notes and projects.
 
-First, run the development server:
+Next.js App Router, single static page. No client state, no Tailwind.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+app/
+├── layout.tsx      # fonts, metadata, SVG mark sprite
+├── page.tsx        # full page
+└── globals.css     # design tokens + section styles
+public/
+└── favicon.svg
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Develop
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm install
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000).
 
-## Learn More
+## Build / deploy
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Deploy the repo on Vercel, Netlify, or Cloudflare Pages (framework: Next.js). Output is a static prerender of `/`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Before going live
 
-## Deploy on Vercel
+1. Confirm domain in `app/layout.tsx` metadata (`metadataBase`, Open Graph URL) if it differs from `coluylabs.org`.
+2. Add `public/og.png` — 1200×630, ink background `#16171B` with the reversed mark and wordmark.
+3. Check `mailto:hi@coluylabs.org` and the LinkedIn URL in `app/page.tsx`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Design tokens
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+CSS variables in `app/globals.css`:
+
+| Token | Value | Use |
+| --- | --- | --- |
+| `--paper` | `#FBFAF7` | page background |
+| `--paper-2` | `#F3F1EC` | alternating sections |
+| `--ink` | `#16171B` | headings, buttons, footer |
+| `--ink-2` | `#42444C` | body copy |
+| `--muted` | `#6B6D76` | labels, mono meta |
+| `--rule` | `#E2E0DA` | hairlines |
+| `--accent` | `#2B4A9B` | one element per screen |
+
+Type: Newsreader (display), IBM Plex Sans (body), IBM Plex Mono (labels), loaded via `next/font/google`.
