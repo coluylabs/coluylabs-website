@@ -309,30 +309,49 @@ a.link-soft:hover {
   max-width: 48ch;
 }
 
-/* work */
+/* work — stack by default; 3-col only when all cards fit (avoids empty gray cell) */
 .cards {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 0 1px;
-  background: var(--rule);
+  grid-template-columns: 1fr;
+  gap: 0;
+  background: transparent;
   border-top: 1px solid var(--ink);
 }
 
 .card {
   background: var(--paper);
-  padding: 28px;
+  padding: 28px 0;
   display: flex;
   flex-direction: column;
   gap: 14px;
   align-items: flex-start;
-}
-
-.card:first-child {
-  padding-left: 0;
+  min-width: 0;
+  border-bottom: 1px solid var(--rule);
 }
 
 .card:last-child {
-  padding-right: 0;
+  border-bottom: none;
+}
+
+@media (min-width: 960px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 1px;
+    background: var(--rule);
+  }
+
+  .card {
+    padding: 28px;
+    border-bottom: none;
+  }
+
+  .card:first-child {
+    padding-left: 0;
+  }
+
+  .card:last-child {
+    padding-right: 0;
+  }
 }
 
 .card-head {
@@ -357,8 +376,8 @@ a.link-soft:hover {
 .card h2 {
   font-family: var(--serif);
   font-size: 30px;
-  line-height: 1;
-  white-space: nowrap;
+  line-height: 1.1;
+  white-space: normal;
 }
 
 .card p {
@@ -576,4 +595,32 @@ a.link-soft:hover {
 
 .foot a:hover {
   color: var(--paper);
+}
+
+/* responsive */
+@media (max-width: 640px) {
+  .wrap {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .nav-in,
+  .hero,
+  .strip-in,
+  .sec,
+  .about,
+  .contact-in,
+  .foot-in {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero {
+    padding-top: 72px;
+    padding-bottom: 56px;
+  }
+
+  .note-date {
+    width: auto;
+  }
 }

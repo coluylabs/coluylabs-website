@@ -113,7 +113,7 @@ export default function Home() {
             <div className="card">
               <div className="card-head">
                 <div className="status">Stealth</div>
-                <h2>Unnamed</h2>
+                <h2>SecAudit</h2>
               </div>
               <p>
                 A platform for cryptographic security review — carrying a design, its
@@ -273,12 +273,12 @@ export default function Home() {
           <div className="contact-links">
             <a
               className="row"
-              href="https://www.linkedin.com/in/hieu-tran"
+              href="https://www.linkedin.com/in/ngoc-hieu-tran-6b17633b/"
               target="_blank"
               rel="noopener noreferrer"
             >
               <span>LinkedIn</span>
-              <span>/in/hieu-tran</span>
+              <span>/in/ngoc-hieu-tran-6b17633b</span>
             </a>
             <a
               className="row"
