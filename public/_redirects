@@ -1,1 +1,2 @@
-https://www.coluylabs.org/* https://coluylabs.org/:splat 301
+# www → apex redirect: Cloudflare Redirect Rule "www to apex 301" (zone level).
+# Pages _redirects chỉ nhận relative path, không nhận absolute URL có hostname.

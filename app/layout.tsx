@@ -57,6 +57,43 @@ export const metadata: Metadata = {
   },
 };
 
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://coluylabs.org/#organization",
+      name: "Coluy Labs",
+      url: "https://coluylabs.org/",
+      email: "hi@coluylabs.org",
+      logo: "https://coluylabs.org/favicon.svg",
+      description:
+        "Notes and code from building MPC systems: multi-party computation, threshold signatures, post-quantum cryptography and tooling for cryptographic security review.",
+      founder: { "@id": "https://coluylabs.org/#person" },
+      sameAs: ["https://defishard.com"],
+    },
+    {
+      "@type": "Person",
+      "@id": "https://coluylabs.org/#person",
+      name: "Hieu Tran",
+      alternateName: "Ngoc Hieu Tran",
+      url: "https://coluylabs.org/",
+      email: "hi@coluylabs.org",
+      jobTitle: "Applied cryptographer",
+      worksFor: { "@id": "https://coluylabs.org/#organization" },
+      sameAs: [
+        "https://www.linkedin.com/in/ngoc-hieu-tran-6b17633b/",
+        "https://defishard.com",
+      ],
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Ho Chi Minh City",
+        addressCountry: "VN",
+      },
+    },
+  ],
+};
+
 function MarkSprite() {
   return (
     <svg width="0" height="0" style={{ position: "absolute" }} aria-hidden="true">
@@ -99,6 +136,12 @@ export default function RootLayout({
       <body
         className={`${newsreader.variable} ${plexSans.variable} ${plexMono.variable}`}
       >
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c"),
+          }}
+        />
         <MarkSprite />
         {children}
       </body>
